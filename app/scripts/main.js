@@ -67,7 +67,7 @@ $(document).ready(function() {
     $('html,body').animate({scrollTop: top}, 500)
   });
 
-  /* choose plan button (you-are) */
+  /* choose plan button (.you-are) */
   var individual_price_table = $('.you-are').find('.individual');
   var company_price_table = $('.you-are').find('.company');
 
@@ -76,8 +76,8 @@ $(document).ready(function() {
     $(this).siblings().removeClass('selected');
     individual_price_table.addClass('selected');
     company_price_table.removeClass('selected');
-    $('.build-block-company').removeClass('selected-build');
-    $('.build-block-individual').addClass('selected-build');
+    $('.build-block-company').removeClass('selected-build').css('display', 'none').hide().fadeOut(400);
+    $('.build-block-individual').addClass('selected-build').css('display', 'flex').hide().fadeIn(600);
   });
 
   $('.you-are').find('.company').on('click', function(){
@@ -85,7 +85,21 @@ $(document).ready(function() {
     $(this).siblings().removeClass('selected');
     company_price_table.addClass('selected');
     individual_price_table.removeClass('selected');
-    $('.build-block-individual').removeClass('selected-build');
-    $('.build-block-company').addClass('selected-build');
+    $('.build-block-individual').removeClass('selected-build').css('display', 'none').hide().fadeOut(400);
+    $('.build-block-company').addClass('selected-build').css('display', 'flex').hide().fadeIn(600);
+  });
+
+  $('a[data-rel^=lightcase]').lightcase({
+    youtubePlayerParams: {
+      modestbranding: 1,
+      showinfo: 0,
+      rel: 0,
+      controls: 0
+    },
+    vimeoPlayerParams: {
+      byline : 0,
+      portrait : 0,
+      color : 'A90707'
+    }
   });
 });

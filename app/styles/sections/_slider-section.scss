@@ -5,7 +5,7 @@
     display: block;
     font-family: $latolight;
     font-size: 32px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
   p {
     margin: 0 auto;
@@ -17,8 +17,8 @@
   }
   .rating {
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 50px;
     .star {
       width: 22px;
       height: 22px;
@@ -118,13 +118,14 @@
     padding: 50px 0;
     span {
       font-size: 25px;
-      padding-bottom: 30px;
+      padding-bottom: 20px;
     }
     p {
       font-size: 15px;
     }
     .rating {
-      padding-bottom: 50px;
+      padding-top: 10px;
+      padding-bottom: 15px;
     }
   }
 }
