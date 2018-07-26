@@ -1,0 +1,119 @@
+.banner-section {
+  background-image: url(../images/banner_background.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  padding-top: 180px;
+  padding-bottom: 450px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  h1 {
+    margin-bottom: 40px;
+  }
+  p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:$latoregular;
+    font-size: 20px;
+    color: #8c8f94;
+    max-width: 775px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .play-btn {
+    @extend .btn,
+    .white-btn;
+    width: 180px;
+    margin-bottom: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+      .fas {
+        font-size: 12px;
+        margin-right: 10px;
+      }
+
+
+    &::before {
+      content: '';
+      //@include sprite($play-icon);
+      display: inline-block;
+      position: relative;
+      margin-right: 10px;
+    }
+  }
+  img {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: -450px;
+
+    animation-name: up;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+}
+
+
+
+@keyframes up {
+  0% {
+    -webkit-transform: translate(-50%, 40%);
+    -moz-transform: translate(-50%, 40%);
+    -ms-transform: translate(-50%, 40%);
+    -o-transform: translate(-50%, 40%);
+    transform: translate(-50%, 40%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    opacity: 1;
+  }
+}
+
+
+
+
+@media (max-width: 992px) {
+  .banner-section {
+    padding-top: 100px;
+    h1 {
+      font-size: 50px;
+    }
+  }
+}
+@media (max-width: 480px) {
+
+  .banner-section {
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .banner-section {
+    img {
+      width: 90%;
+    }
+  }
+}

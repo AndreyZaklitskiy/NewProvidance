@@ -1,0 +1,223 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+  z-index: 99;
+  width: 100%;
+  background-color: transparent;
+  transition: all .5s;
+  .container {
+    padding: 15px 0;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    font-family: $latoregular;
+    color: #26272d;
+    display: inline-block;
+    line-height: 40px;
+  }
+}
+/* links hover color */
+.menu {
+  a {
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+.active {
+  background: $white;
+  padding: 0;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+.head-menu-block {
+  @extend .col-md-5;
+  .head-menu-list {
+    li {
+      padding-right: 40px;
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.head-logo-block {
+  @extend .col-md-2;
+  display: inline-block;
+  text-align: center;
+
+}
+a.head-logo {
+  height: 40px;
+  width: auto;
+  img {
+    margin-top: 13px;
+  }
+}
+.head-help-block {
+  @extend .col-md-5;
+  text-align: right;
+}
+
+.head-help-list {
+  li {
+    .help {
+      color: $gray;
+      &:hover {
+        color: $blue;
+      }
+    }
+    padding-left: 30px;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+/* оформление get app кнопки */
+.get-btn {
+  @extend .btn,
+  .blue-btn;
+  display: inline-block;
+  background-color: $blue;
+  width: 130px;
+  text-align: center;
+  &:hover {
+    color: #fff !important;
+  }
+  &::before {
+    content: '\f179';
+    font-size: 20px;
+    font-family: "Font Awesome 5 Brands";
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: -3px;
+  }
+}
+
+/* burger menu button */
+.menu-link {
+  display: none;
+  position: absolute;
+  z-index: 25;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, .3);
+}
+.menu-link span {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  margin-left: -10px;
+}
+.menu-link span:nth-child(1) {
+  transform: translateY(-6px);
+}
+.menu-link span:nth-child(3) {
+  transform: translateY(6px);
+}
+.menu-link:hover {
+  cursor: pointer;
+}
+.menu-link:hover span:nth-child(3) {
+  transform-origin: 0% 0%;
+  transform: translateY(6px) rotate(-33deg);
+  width: 10px;
+  margin-left: 0;
+}
+.menu-link:hover span:nth-child(1) {
+  transform-origin: 0% 0%;
+  transform: translateY(-6px) rotate(31deg);
+  width: 12px;
+  margin-left: 0;
+}
+
+/* оформление адаптивного меню */
+.adaptive-menu {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background: #333;
+  height: 100vh;
+  width: 300px;
+  padding-left: 30px;
+  color: #fff;
+  &-logo {
+    margin: 30px 0;
+    display: inline-block;
+  }
+  &-item {
+    margin-bottom: 10px;
+    a {
+      color: #fff;
+    }
+  }
+  &-btn {
+    margin-bottom: 40px;
+  }
+  &-footer {
+    font-size: 12px;
+    p {
+      margin-bottom: 6px;
+    }
+    a {
+      color: $blue;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* кнопка выключения адаптивного меню */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 3rem;
+  transition: all 0.2s;
+  transform-origin: 50% 53%;
+  display: block;
+  line-height: 3rem;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+.active-menu {
+  left: 0;
+}
+
+
+
+
+/* media */
+
+@media (max-width: 991px) {
+  .menu-link {
+    display: inline-block;
+  }
+  .head-menu-list {
+    display: none;
+  }
+  .head-help-block {
+    display: none;
+  }
+  .head-logo-block {
+    margin-top: 5px;
+    margin-left: 50px;
+  }
+}

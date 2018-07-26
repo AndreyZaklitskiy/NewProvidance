@@ -1,0 +1,49 @@
+.subscribe-section {
+  padding:  90px 0;
+  h2 {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  p {
+    color: $gray;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.news-form {
+  @extend .form-stiles;
+  padding-bottom: 30px;
+  input {
+    background-color: transparent;
+    border: none;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    padding: 0 22px;
+    flex-grow: 1;
+    &:focus {
+      outline: none;
+    }
+  }
+  .news-btn {
+    @extend .btn,
+    .btn-green, .form-btn;
+  }
+}
+
+@media (max-width: 575px) {
+  .subscribe-section {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 480px) {
+  .subscribe-section {
+    h2 {
+      padding-bottom: 30px;
+    }
+  }
+  form.news-form {
+    margin: 0 auto 10px;
+  }
+}

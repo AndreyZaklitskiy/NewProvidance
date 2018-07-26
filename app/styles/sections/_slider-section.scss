@@ -1,0 +1,131 @@
+.slider-section {
+  padding: 120px 0;
+  span {
+    text-align: center;
+    display: block;
+    font-family: $latolight;
+    font-size: 32px;
+    padding-bottom: 20px;
+  }
+  p {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 570px;
+    font-family: $latoregular;
+    font-size: 20px;
+    color: $gray;
+  }
+  .rating {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    .star {
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  h6 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $latobold;
+    font-size: 12px;
+  }
+}
+.feedback-slider-item {
+  .photo {
+    @extend .center-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-bottom: 70px;
+    //box-shadow: 13.7px 37.6px 40px rgba(92, 95, 101, 0.28);
+  }
+}
+
+/* слайды */
+.slick-slide {
+  opacity: .3;
+  margin-top: 20px;
+  img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.rating {
+  .fas {
+    color: #F2BC3B;
+    font-size: 22px;
+    margin: 2px;
+  }
+}
+/* активный слайд */
+.slick-center {
+  margin-top: 0;
+  opacity: 1;
+  img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* arrows */
+.slick-buttons {
+  position: absolute;
+  border: none;
+  top: 0;
+  z-index: 10;
+  width: 40px;
+  height: 130px;
+  background-color: #fff;
+  img {
+    width: 20px;
+    height: 40px;
+  }
+}
+.slick-prev {
+  @extend .slick-buttons;
+  left: 0;
+}
+.slick-next {
+  @extend .slick-buttons;
+  right: 0;
+}
+.feedback-slider > .slick-list  {
+  height: 165px;
+}
+
+
+@media screen and (max-width: 992px) {
+  .slider-section {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-slider-item {
+    .photo {
+      margin-bottom: 50px;
+    }
+  }
+  .slider-section {
+    padding: 50px 0;
+    span {
+      font-size: 25px;
+      padding-bottom: 30px;
+    }
+    p {
+      font-size: 15px;
+    }
+    .rating {
+      padding-bottom: 50px;
+    }
+  }
+}
+

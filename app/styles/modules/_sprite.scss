@@ -1,0 +1,233 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$apple-icon-name: 'apple-Icon';
+$apple-icon-x: 85px;
+$apple-icon-y: 0px;
+$apple-icon-offset-x: -85px;
+$apple-icon-offset-y: 0px;
+$apple-icon-width: 17px;
+$apple-icon-height: 20px;
+$apple-icon-total-width: 102px;
+$apple-icon-total-height: 94px;
+$apple-icon-image: '../images/sprite.png';
+$apple-icon: (85px, 0px, -85px, 0px, 17px, 20px, 102px, 94px, '../images/sprite.png', 'apple-Icon', );
+$arrow-right-icon-name: 'arrow-right-icon';
+$arrow-right-icon-x: 71px;
+$arrow-right-icon-y: 52px;
+$arrow-right-icon-offset-x: -71px;
+$arrow-right-icon-offset-y: -52px;
+$arrow-right-icon-width: 13px;
+$arrow-right-icon-height: 12px;
+$arrow-right-icon-total-width: 102px;
+$arrow-right-icon-total-height: 94px;
+$arrow-right-icon-image: '../images/sprite.png';
+$arrow-right-icon: (71px, 52px, -71px, -52px, 13px, 12px, 102px, 94px, '../images/sprite.png', 'arrow-right-icon', );
+$facebook-icon-name: 'facebook-Icon';
+$facebook-icon-x: 0px;
+$facebook-icon-y: 76px;
+$facebook-icon-offset-x: 0px;
+$facebook-icon-offset-y: -76px;
+$facebook-icon-width: 9px;
+$facebook-icon-height: 18px;
+$facebook-icon-total-width: 102px;
+$facebook-icon-total-height: 94px;
+$facebook-icon-image: '../images/sprite.png';
+$facebook-icon: (0px, 76px, 0px, -76px, 9px, 18px, 102px, 94px, '../images/sprite.png', 'facebook-Icon', );
+$google-icon-name: 'google-Icon';
+$google-icon-x: 25px;
+$google-icon-y: 52px;
+$google-icon-offset-x: -25px;
+$google-icon-offset-y: -52px;
+$google-icon-width: 24px;
+$google-icon-height: 15px;
+$google-icon-total-width: 102px;
+$google-icon-total-height: 94px;
+$google-icon-image: '../images/sprite.png';
+$google-icon: (25px, 52px, -25px, -52px, 24px, 15px, 102px, 94px, '../images/sprite.png', 'google-Icon', );
+$linked-in-icon-name: 'linkedIn-Icon';
+$linked-in-icon-x: 85px;
+$linked-in-icon-y: 21px;
+$linked-in-icon-offset-x: -85px;
+$linked-in-icon-offset-y: -21px;
+$linked-in-icon-width: 16px;
+$linked-in-icon-height: 15px;
+$linked-in-icon-total-width: 102px;
+$linked-in-icon-total-height: 94px;
+$linked-in-icon-image: '../images/sprite.png';
+$linked-in-icon: (85px, 21px, -85px, -21px, 16px, 15px, 102px, 94px, '../images/sprite.png', 'linkedIn-Icon', );
+$lock-icon-name: 'lock-icon';
+$lock-icon-x: 0px;
+$lock-icon-y: 0px;
+$lock-icon-offset-x: 0px;
+$lock-icon-offset-y: 0px;
+$lock-icon-width: 42px;
+$lock-icon-height: 51px;
+$lock-icon-total-width: 102px;
+$lock-icon-total-height: 94px;
+$lock-icon-image: '../images/sprite.png';
+$lock-icon: (0px, 0px, 0px, 0px, 42px, 51px, 102px, 94px, '../images/sprite.png', 'lock-icon', );
+$menu-icon-name: 'menu-Icon';
+$menu-icon-x: 50px;
+$menu-icon-y: 52px;
+$menu-icon-offset-x: -50px;
+$menu-icon-offset-y: -52px;
+$menu-icon-width: 20px;
+$menu-icon-height: 12px;
+$menu-icon-total-width: 102px;
+$menu-icon-total-height: 94px;
+$menu-icon-image: '../images/sprite.png';
+$menu-icon: (50px, 52px, -50px, -52px, 20px, 12px, 102px, 94px, '../images/sprite.png', 'menu-Icon', );
+$on-icon-name: 'on-Icon';
+$on-icon-x: 21px;
+$on-icon-y: 76px;
+$on-icon-offset-x: -21px;
+$on-icon-offset-y: -76px;
+$on-icon-width: 14px;
+$on-icon-height: 10px;
+$on-icon-total-width: 102px;
+$on-icon-total-height: 94px;
+$on-icon-image: '../images/sprite.png';
+$on-icon: (21px, 76px, -21px, -76px, 14px, 10px, 102px, 94px, '../images/sprite.png', 'on-Icon', );
+$pinterest-icon-name: 'pinterest-Icon';
+$pinterest-icon-x: 85px;
+$pinterest-icon-y: 37px;
+$pinterest-icon-offset-x: -85px;
+$pinterest-icon-offset-y: -37px;
+$pinterest-icon-width: 14px;
+$pinterest-icon-height: 17px;
+$pinterest-icon-total-width: 102px;
+$pinterest-icon-total-height: 94px;
+$pinterest-icon-image: '../images/sprite.png';
+$pinterest-icon: (85px, 37px, -85px, -37px, 14px, 17px, 102px, 94px, '../images/sprite.png', 'pinterest-Icon', );
+$play-icon-name: 'play-icon';
+$play-icon-x: 36px;
+$play-icon-y: 76px;
+$play-icon-offset-x: -36px;
+$play-icon-offset-y: -76px;
+$play-icon-width: 10px;
+$play-icon-height: 10px;
+$play-icon-total-width: 102px;
+$play-icon-total-height: 94px;
+$play-icon-image: '../images/sprite.png';
+$play-icon: (36px, 76px, -36px, -76px, 10px, 10px, 102px, 94px, '../images/sprite.png', 'play-icon', );
+$star-icon-name: 'star-Icon';
+$star-icon-x: 0px;
+$star-icon-y: 52px;
+$star-icon-offset-x: 0px;
+$star-icon-offset-y: -52px;
+$star-icon-width: 24px;
+$star-icon-height: 23px;
+$star-icon-total-width: 102px;
+$star-icon-total-height: 94px;
+$star-icon-image: '../images/sprite.png';
+$star-icon: (0px, 52px, 0px, -52px, 24px, 23px, 102px, 94px, '../images/sprite.png', 'star-Icon', );
+$tumbler-icon-name: 'tumbler-Icon';
+$tumbler-icon-x: 10px;
+$tumbler-icon-y: 76px;
+$tumbler-icon-offset-x: -10px;
+$tumbler-icon-offset-y: -76px;
+$tumbler-icon-width: 10px;
+$tumbler-icon-height: 16px;
+$tumbler-icon-total-width: 102px;
+$tumbler-icon-total-height: 94px;
+$tumbler-icon-image: '../images/sprite.png';
+$tumbler-icon: (10px, 76px, -10px, -76px, 10px, 16px, 102px, 94px, '../images/sprite.png', 'tumbler-Icon', );
+$twitter-icon-name: 'twitter-Icon';
+$twitter-icon-x: 85px;
+$twitter-icon-y: 55px;
+$twitter-icon-offset-x: -85px;
+$twitter-icon-offset-y: -55px;
+$twitter-icon-width: 17px;
+$twitter-icon-height: 14px;
+$twitter-icon-total-width: 102px;
+$twitter-icon-total-height: 94px;
+$twitter-icon-image: '../images/sprite.png';
+$twitter-icon: (85px, 55px, -85px, -55px, 17px, 14px, 102px, 94px, '../images/sprite.png', 'twitter-Icon', );
+$watch-icon-name: 'watch-icon';
+$watch-icon-x: 43px;
+$watch-icon-y: 0px;
+$watch-icon-offset-x: -43px;
+$watch-icon-offset-y: 0px;
+$watch-icon-width: 41px;
+$watch-icon-height: 47px;
+$watch-icon-total-width: 102px;
+$watch-icon-total-height: 94px;
+$watch-icon-image: '../images/sprite.png';
+$watch-icon: (43px, 0px, -43px, 0px, 41px, 47px, 102px, 94px, '../images/sprite.png', 'watch-icon', );
+$spritesheet-width: 102px;
+$spritesheet-height: 94px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($apple-icon, $arrow-right-icon, $facebook-icon, $google-icon, $linked-in-icon, $lock-icon, $menu-icon, $on-icon, $pinterest-icon, $play-icon, $star-icon, $tumbler-icon, $twitter-icon, $watch-icon, );
+$spritesheet: (102px, 94px, '../images/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
