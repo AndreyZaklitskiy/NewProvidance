@@ -36,6 +36,7 @@
     @extend .col-md-7,
     .col-md-offset-1;
     display: flex;
+    //opacity: 0;
     align-items: center;
     .starter-letter {
       @extend .letter-stiles;
@@ -47,7 +48,7 @@
       border-radius: 10px;
       padding-top: 60px;
       padding-bottom: 70px;
-      transition: all 2s;
+      transition: opacity 1s;
       .starter-btn {
         @extend .btn,
         .blue-btn;
@@ -81,6 +82,14 @@
     }
   }
 }
+
+.build-block.selected-build {
+  //opacity: 1;
+  //transition: opacity 1s;
+}
+
+
+
 /* choose plan button */
 .you-are {
   margin-bottom: 77px;
@@ -150,7 +159,6 @@
     display: flex;
   }
 }
-
 
 .letter-stiles {
   .price {
