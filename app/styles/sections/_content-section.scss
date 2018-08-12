@@ -22,16 +22,6 @@
       top: 50%;
       position: absolute;
       right: 50%;
-      img {
-        -webkit-animation-name: phone-anim;
-        -moz-animation-name: phone-anim;
-        -o-animation-name: phone-anim;
-        animation-name: phone-anim;
-        -webkit-animation-duration: 2s;
-        -moz-animation-duration: 2s;
-        -o-animation-duration: 2s;
-        animation-duration: 2s;
-      }
     }
   }
   .map-block {
@@ -49,21 +39,11 @@
       transform: translateY(-50%);
       top: 50%;
       left: 50%;
-      img {
-        -webkit-animation-name: map-anim;
-        -moz-animation-name: map-anim;
-        -o-animation-name: map-anim;
-        animation-name: map-anim;
-        -webkit-animation-duration: 2s;
-        -moz-animation-duration: 2s;
-        -o-animation-duration: 2s;
-        animation-duration: 2s;
-      }
     }
   }
 }
 .lock {
-  &:before {
+&:before {
     content: '';
     display: inline-block;
     @include sprite($lock-icon);
@@ -130,45 +110,6 @@
 
 
 
-@keyframes phone-anim {
-  0% {
-    -webkit-transform: translateX(-40%);
-    -moz-transform: translateX(-40%);
-    -ms-transform: translateX(-40%);
-    -o-transform: translateX(-40%);
-    transform: translateX(-40%);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-@keyframes map-anim {
-  0% {
-    -webkit-transform: translateX(40%);
-    -moz-transform: translateX(40%);
-    -ms-transform: translateX(40%);
-    -o-transform: translateX(40%);
-    transform: translateX(40%);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-
-
-
 
 @media  (max-width: 1200px) {
   .huck-btn {
@@ -192,6 +133,11 @@
     }
     .map-block {
       min-height: 700px;
+    }
+  }
+  .text-info {
+    h6 {
+      padding-top: 0;
     }
   }
 }
@@ -228,11 +174,11 @@
       img {
         height: 100%;
       }
-      -webkit-transform: translate(50%, -50%);
-      -moz-transform: translate(50%, -50%);
-      -ms-transform: translate(50%, -50%);
-      -o-transform: translate(50%, -50%);
-      transform: translate(50%, -50%);
+      -webkit-transform: translate(80%, -50%);
+      -moz-transform: translate(80%, -50%);
+      -ms-transform: translate(80%, -50%);
+      -o-transform: translate(80%, -50%);
+      transform: translate(80%, -50%);
       height: 80%;
     }
     .map {

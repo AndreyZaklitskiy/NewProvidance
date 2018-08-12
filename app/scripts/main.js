@@ -89,4 +89,7 @@ $(document).ready(function() {
     $('.build-block-company').addClass('selected-build').delay(100).css('display', 'flex').hide().fadeIn(500);
   });
 
+  AOS.init();
 });
+
+
