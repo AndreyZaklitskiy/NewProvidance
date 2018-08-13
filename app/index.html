@@ -9,9 +9,16 @@
   <!-- Place favicon.ico in the root directory -->
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/Font-Awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="/bower_components/aos/dist/aos.css">
+  <link rel="stylesheet" href="/bower_components/lightgallery/dist/css/lightgallery.min.css" />
 
-  <link rel="stylesheet" href="bower_components/aos/dist/aos.css"/>
-  <link rel="stylesheet" href="/bower_components/lightgallery/dist/css/lightgallery.css" />
+  <!--<link rel="stylesheet" href="/bower_components/Font-Awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css
+  ">
+  <link rel="stylesheet" href="/bower_components/aos/dist/aos.css">
+  <link rel="stylesheet" href="/bower_components/lightgallery/dist/css/lightgallery.css" />-->
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css styles/main.css -->
@@ -33,11 +40,11 @@
   </div>
 
   <ul class="adaptive-menu-list">
-    <li class="adaptive-menu-item"><a href="#tour">Tour</a></li>
-    <li class="adaptive-menu-item"><a href="#features">Features</a></li>
-    <li class="adaptive-menu-item"><a href="#pricing">Pricing</a></li>
-    <li class="adaptive-menu-item"><a href="#help">Help</a></li>
-    <li class="adaptive-menu-item"><a href="#contacts">Contacts</a></li>
+    <li class="adaptive-menu-item"><a href="#tour" rel='Scroll2id'>Tour</a></li>
+    <li class="adaptive-menu-item"><a href="#features" rel='Scroll2id'>Features</a></li>
+    <li class="adaptive-menu-item"><a href="#pricing" rel='Scroll2id'>Pricing</a></li>
+    <li class="adaptive-menu-item"><a href="#help" rel='Scroll2id'>Help</a></li>
+    <li class="adaptive-menu-item"><a href="#contacts" rel='Scroll2id'>Contacts</a></li>
   </ul>
   <div class="adaptive-menu-btn">
     <a href="#" class="get-btn">Get app</a>
@@ -61,13 +68,13 @@
     <div class="head-menu-block menu">
       <ul class="head-menu-list">
         <li>
-          <a href="#tour">Tour</a>
+          <a href="#tour" rel='Scroll2id'>Tour</a>
         </li>
         <li>
-          <a href="#features">Features</a>
+          <a href="#features" rel='Scroll2id'>Features</a>
         </li>
         <li>
-          <a href="#pricing">Pricing</a>
+          <a href="#pricing" rel='Scroll2id'>Pricing</a>
         </li>
       </ul>
     </div>
@@ -79,10 +86,10 @@
     <div class="head-help-block menu">
       <ul class="head-help-list">
         <li>
-          <a href="#help" class="help">Help</a>
+          <a href="#help" class="help" rel='Scroll2id'>Help</a>
         </li>
         <li>
-          <a href="#contacts">Contacts</a>
+          <a href="#contacts" rel='Scroll2id'>Contacts</a>
         </li>
         <li>
           <a href="#" class="get-btn">Get app</a>
@@ -99,9 +106,11 @@
       The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his
       interview with his landlady. His face brightened up, and he began to feel quite convivial.
     </p>
-    <a data-aos="fade-up" data-aos-delay="400" data-aos-duration="400" href="https://www.youtube.com/watch?v=9TsR3L_XX_I" data-lc-href="" data-rel="lightcase" class="play-btn" data-rel="lightcase" title="video">
+    <div id="video-gallery">
+    <a href="https://www.youtube.com/watch?v=9TsR3L_XX_I" data-lc-href="" data-rel="lightcase" class="play-btn" data-rel="lightcase" title="Beautiful Interface" data-aos="fade-up" data-aos-delay="400" data-aos-duration="400">
       <i class="fas fa-play"></i> Watch Video
     </a>
+    </div>
     <img src="images/header_iphone.png" alt="" data-aos-delay="600" data-aos-duration="400">
   </div>
 </div>
@@ -131,7 +140,6 @@
       </div>
     </div>
     <div class="phone-block">
-
       <div class="i-phone">
         <img src="images/iphone-feature.png" alt="">
       </div>
@@ -166,7 +174,6 @@
         <img src="images/dropbox.png" class="dropbox" alt="" data-aos="zoom-in-right" data-aos-delay="400" data-aos-easing="ease-out-cubic" data-aos-duration="500">
         <img src="images/evernote.png" class="evernote" alt="" data-aos="zoom-in-right" data-aos-delay="500" data-aos-easing="ease-out-cubic" data-aos-duration="500">
       </div>
-
       <div class="map">
         <img src="images/map.png" alt="">
       </div>
@@ -213,9 +220,53 @@
       <div class="feedback-slider-item">
           <img src="images/user1.jpg" class="photo" alt="">
       </div>
+      <div class="feedback-slider-item">
+        <img src="images/user2.jpg" class="photo" alt="">
+      </div>
+      <div class="feedback-slider-item">
+        <img src="images/user3.jpg" class="photo" alt="">
+      </div>
 
     </div>
     <div class="slider-nav" data-aos="fade-up-left" data-aos-duration="500" data-aos-delay="200">
+      <div class="slider-item-content">
+            <span>
+              New Providence is the great UI kit
+            </span>
+        <p>
+          “Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she
+          at once took up the little golden key and hurried off to the garden door.”
+        </p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h6>
+          Cameron Dowman
+        </h6>
+      </div>
+      <div class="slider-item-content">
+            <span>
+              New Providence is the great UI kit
+            </span>
+        <p>
+          “Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she
+          at once took up the little golden key and hurried off to the garden door.”
+        </p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h6>
+          Cameron Dowman
+        </h6>
+      </div>
       <div class="slider-item-content">
             <span>
               New Providence is the great UI kit
@@ -311,13 +362,10 @@
           Company
         </div>
       </div>
-
-
-      <p data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
-      <p class="href" data-aos="fade-right" data-aos-duration="500" data-aos-delay="400">Have a bigger team?<a href="#">Let‘s talk</a></p>
+      <p data-aos="fade-right" data-aos-duration="500" data-aos-delay="300" data-aos-anchor-placement="bottom">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
+      <p class="href" data-aos="fade-right" data-aos-duration="500" data-aos-delay="400" data-aos-anchor-placement="bottom">Have a bigger team?<a href="#">Let‘s talk</a></p>
     </div>
-
-    <div class="build-block build-block-individual selected-build" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+    <div class="build-block build-block-individual selected-build" data-aos="fade-left" data-aos-delay="800" data-aos-duration="500">
       <div class="starter-letter">
         <h2>
           Starter
@@ -348,7 +396,7 @@
         <a href="#" class="make-btn">Make me a Pro</a>
       </div>
     </div>
-    <div class="build-block build-block-company" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+    <div class="build-block build-block-company" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
       <div class="starter-letter">
         <h2>
           Starter
@@ -480,11 +528,8 @@
 <script src="/bower_components/modernizr/modernizr.js"></script>
 <script src="/bower_components/slick-carousel/slick/slick.js"></script>
 <script src="/bower_components/aos/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<script src="/bower_components/lightgallery/dist/js/lightgallery.min.js"></script>
-
+<script src="/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script>
+<script src="/bower_components/page-scroll-to-id/jquery.malihu.PageScroll2id.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 <!-- build:js scripts/main.js -->

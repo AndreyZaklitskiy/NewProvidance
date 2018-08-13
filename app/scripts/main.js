@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   // Scroll Events
   $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
@@ -45,7 +44,6 @@ $(document).ready(function(){
     ]
   });
 });
-
 /* скрипт адаптивного меню */
 $(document).ready(function() {
   var menuLink = $('.menu-link');
@@ -88,8 +86,20 @@ $(document).ready(function() {
     $('.build-block-individual').removeClass('selected-build').css('display', 'none').hide().fadeOut();
     $('.build-block-company').addClass('selected-build').delay(100).css('display', 'flex').hide().fadeIn(500);
   });
+//Scroll2id
+  $(window).on("load",function(){
+    $("a[rel='Scroll2id']").mPageScroll2id({
+      scrollSpeed: 1200,
+      autoScrollSpeed: true,
+      pageEndSmoothScroll: true
+    });
+  });
 
+  //AOS
   AOS.init();
+  //lightGallery
+  $('#video-gallery').lightGallery();
 });
+
 
 
