@@ -87,8 +87,8 @@ $(document).ready(function() {
     $('.build-block-company').addClass('selected-build').delay(100).css('display', 'flex').hide().fadeIn(500);
   });
 //Scroll2id
-  $(window).on("load",function(){
-    $("a[rel='Scroll2id']").mPageScroll2id({
+  $(window).on('load',function(){
+    $('a[rel=\'Scroll2id\']').mPageScroll2id({
       scrollSpeed: 1200,
       autoScrollSpeed: true,
       pageEndSmoothScroll: true
@@ -97,6 +97,7 @@ $(document).ready(function() {
 
   //AOS
   AOS.init();
+
   //lightGallery
   $('#video-gallery').lightGallery();
 });
